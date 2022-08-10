@@ -7,7 +7,8 @@ const data = {
   labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
   datasets: [
     {
-      data: [13, 12, 17, 5, 8, 3],
+      label: "Number of Population",
+      data: [3, 3, 3, 3, 3, 3],
       backgroundColor: [
         "rgba(255, 99, 132, 0.2)",
         "rgba(54, 162, 235, 0.2)",
@@ -33,7 +34,7 @@ const IntelChart = () => {
   return (
     <div>
       <h1>Intel Chart</h1>
-      <div style={{ width: "400px", margin: "0 auto" }}>
+      <div style={{ width: "500px", margin: "0 auto" }}>
         <Doughnut data={data} />
       </div>
     </div>
